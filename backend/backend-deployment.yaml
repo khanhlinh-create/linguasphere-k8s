@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: linguasphere-backend
+  name: backend
   labels:
-    app: linguasphere-backend
+    app: backend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: linguasphere-backend
+      app: backend
   template:
     metadata:
       labels:
-        app: linguasphere-backend
+        app: backend
     spec:
       containers:
         - name: backend
@@ -33,6 +33,11 @@ spec:
                 secretKeyRef:
                   name: backend-secrets
                   key: db_name
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: backend-secrets
+                  key: jwt_secret
           livenessProbe:
             httpGet:
               path: /health
