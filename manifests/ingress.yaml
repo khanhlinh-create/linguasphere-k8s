@@ -23,6 +23,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: backend
+                name: linguasphere-backend
                 port:
-                  number: 80
+                  number: 5000
