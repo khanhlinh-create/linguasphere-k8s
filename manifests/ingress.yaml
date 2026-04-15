@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: linguasphere-ingress
-  namespace: default
+  namespace: linguasphere
 spec:
   ingressClassName: nginx
   rules:
