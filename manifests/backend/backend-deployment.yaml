@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: devopsnhom9/linguasphere-backend:latest
+          image: devopsnhom9/linguasphere-backend:3f3d40c2674b474c1f7473098b71a86a99d79ddd
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
