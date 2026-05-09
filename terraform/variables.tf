@@ -16,4 +16,8 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "instance_type" {default = "t2.medium"}
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t2.medium"
+}
