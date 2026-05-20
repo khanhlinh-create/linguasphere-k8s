@@ -13,3 +13,11 @@ variable "instance_type" {
 variable "project_name" {
   type = string
 }
+
+variable "public_key_path" {
+  type = string
+}
+
+variable "ami_id" {
+  type = string
+}

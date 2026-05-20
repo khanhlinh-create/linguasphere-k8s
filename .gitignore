@@ -1,0 +1,11 @@
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/tfplan
+terraform/terraform.tfvars
+
+# SSH key
+terraform/linguasphere-k3s-key
+terraform/linguasphere-k3s-key.pub
