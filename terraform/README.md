@@ -123,5 +123,6 @@ Mở trình duyệt: `http://localhost:3000`
 ## Dọn dẹp
 
 ```bash
-terraform destroy -var="deploy_monitoring=true"
+terraform state rm module.monitoring[0].kubernetes_namespace.monitoring
+terraform destroy
 ```

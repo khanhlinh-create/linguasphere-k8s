@@ -26,11 +26,6 @@ EOF
     volume_type = "gp3"
   }
 
-  root_block_device {
-    volume_size = 20
-    volume_type = "gp3"
-  }
-
   tags = {
     Name = "${var.project_name}-k3s-server"
   }
