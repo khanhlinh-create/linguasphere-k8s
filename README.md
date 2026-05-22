@@ -1,1 +1,0 @@
-# linguasphere-k8s

@@ -9,3 +9,6 @@ terraform/terraform.tfvars
 # SSH key
 terraform/linguasphere-k3s-key
 terraform/linguasphere-k3s-key.pub
+
+awscliv2.zip
+aws/

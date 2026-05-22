@@ -9,3 +9,8 @@ output "private_ip" {
 output "instance_id" {
   value = aws_instance.k3s_server.id
 }
+
+output "kubeconfig_ssm_parameter_name" {
+  description = "SSM Parameter Store name where the instance publishes kubeconfig"
+  value       = var.kubeconfig_ssm_parameter_name
+}
