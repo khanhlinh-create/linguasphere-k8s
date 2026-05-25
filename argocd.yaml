@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/khanhlinh-create/linguasphere-k8s.git
     targetRevision: main
     path: manifests
+    directory:
+      recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: linguasphere
