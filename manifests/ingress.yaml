@@ -6,8 +6,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: linguasphere.local
-      http:
+    - http:
         paths:
           - path: /api
             pathType: Prefix
