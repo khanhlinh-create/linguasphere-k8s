@@ -62,7 +62,7 @@ module "monitoring" {
   namespace                = var.monitoring_namespace
   release_name             = var.monitoring_release_name
   chart_version            = var.monitoring_chart_version
-  grafana_admin_password = jsondecode(data.aws_secretsmanager_secret_version.grafana_password.secret_string)["password"]
+  grafana_admin_password = data.aws_secretsmanager_secret_version.grafana_password.secret_string
   grafana_service_type     = var.grafana_service_type
   prometheus_service_type  = var.prometheus_service_type
   helm_values              = var.monitoring_helm_values
