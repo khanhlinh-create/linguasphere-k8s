@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: devopsnhom9/linguasphere-frontend:d0f295234feae7edb582e4a129260f4e5582de6f
+          image: devopsnhom9/linguasphere-frontend:b79551b0721b5a420bd4637b12dd590ad20e1b7b
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
