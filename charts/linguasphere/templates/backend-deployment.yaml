@@ -39,15 +39,3 @@ spec:
                secretKeyRef:
                  name: backend-secrets
                  key: jwt_secret
-         livenessProbe:
-           httpGet:
-             path: /health
-             port: {{ .Values.backend.port }}
-           initialDelaySeconds: 15
-           periodSeconds: 20
-         readinessProbe:
-           httpGet:
-             path: /health
-             port: {{ .Values.backend.port }}
-           initialDelaySeconds: 5
-           periodSeconds: 10
