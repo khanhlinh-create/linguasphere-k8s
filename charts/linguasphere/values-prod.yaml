@@ -1,0 +1,26 @@
+namespace: linguasphere
+
+backend:
+ replicas: 2
+ image:
+   repository: devopsnhom9/linguasphere-backend
+   tag: latest
+   pullPolicy: IfNotPresent
+ port: 5000
+
+frontend:
+ replicas: 3
+ image:
+   repository: devopsnhom9/linguasphere-frontend
+   tag: latest
+   pullPolicy: IfNotPresent
+ port: 8080
+ servicePort: 80
+
+mongodb:
+ image: mongo:7
+ storage: 1Gi
+
+ingress:
+ enabled: true
+ className: traefik
